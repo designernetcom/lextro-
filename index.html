@@ -263,10 +263,9 @@
                                 <div class="search-btn" data-bs-toggle="modal" data-bs-target="#search-modal"><i class="far fa-search"></i></div>
                             </div> -->
               <div class="nav-button d-none d-md-block">
-                <a href="contact.html" class="theme-btn gradient-btn"
-                  >Contact Us</a
-                >
-              </div>
+  <a href="contact.html" target="_blank" class="theme-btn gradient-btn">Inquire Now
+  </a>
+</div>
               <div class="navbar-toggler">
                 <span></span>
                 <span></span>
@@ -3498,14 +3497,14 @@
                 </a>
 
                 <!-- Material Download -->
-                <a href="contact.html" class="support-link">
-                  <div class="support-card">
-                    <div class="icon-wrap">
-                      <i class="fas fa-folder"></i>
-                    </div>
-                    <h3>Material Download</h3>
-                  </div>
-                </a>
+
+                  <div class="support-card" onclick="openDownloadModal()">
+    <div class="icon-wrap">
+        <i class="fas fa-folder"></i>
+    </div>
+    <h3>Material Download</h3>
+</div>
+
               </div>
             </div>
           </section>
@@ -3650,6 +3649,8 @@
               }
             }
           </style>
+
+          
         </main>
         <!--======  Start Footer  ======-->
         <footer
@@ -3686,13 +3687,13 @@
                           and assembly solutions provider in India, specializing
                           in advanced joining technologies
                         </p>
-                        <div class="social-box">
+                        <!-- <div class="social-box">
                                                 <a href="https://wa.me/919175914188" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                                                <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
                                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                                <a href="#"><i class="fab fa-youtube"></i></a> -->
-                                            </div>
+                                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                            </div> -->
                       </div>
                     </div>
                   </div>
@@ -3826,6 +3827,122 @@
         <!--======  End Footer  ======-->
       </div>
     </div>
+
+
+
+    <!-- WhatsApp Sticky Button -->
+<a href="https://wa.me/919175914188" target="_blank" class="whatsapp-float">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+
+<script>
+    const whatsappBtn = document.querySelector('.whatsapp-float');
+
+    setInterval(() => {
+        whatsappBtn.classList.add('pulse');
+        setTimeout(() => {
+            whatsappBtn.classList.remove('pulse');
+        }, 1000);
+    }, 3000);
+</script>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="downloadModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm modal-md">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Download Material</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form id="downloadForm">
+
+          <div class="mb-2">
+            <input type="text" class="form-control form-control-sm" placeholder="Your Name" required>
+          </div>
+
+          <div class="mb-2">
+            <input type="email" class="form-control form-control-sm" placeholder="Your Email" required>
+          </div>
+
+          <div class="mb-3">
+  <select id="pdfSelect" class="form-select form-select-sm w-100" required>
+    <option value="" style="width: 250px;">Select PDF</option>
+    <option value="Introduction Centron_Adhesive Dispensing and Metering System_2025.pdf" style="width: 250px;">
+      Introduction Centron Adhesive Dispensing and Metering System
+    </option>
+    <option value="Leetx_Automatic Screw Feeding System_V24.1.2_EN_SP.pdf" style="width: 250px;">
+      Leetx Automatic Screw Feeding System
+    </option>
+    <option value="Leetx_Servo Press System_V24.1.2_EN_SP.pdf" style="width: 250px;">
+      Leetx Servo Press System
+    </option>
+    <option value="Leetx_Smart Assembly Products_V24.1.2_EN_SP.pdf" style="width: 250px;">
+      Leetx Smart Assembly Products
+    </option>
+    <option value="Leetx_Transducerized Tightening System_V24.1.2_EN_SP.pdf" style="width: 250px;">
+      Leetx Transducerized Tightening System
+    </option>
+  </select>
+</div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn btn-primary w-100 btn-sm" style="justify-content: center;">
+            Download
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script>
+// Open Modal
+function openDownloadModal() {
+    var myModal = new bootstrap.Modal(document.getElementById('downloadModal'));
+    myModal.show();
+}
+
+// Handle Form Submit
+document.getElementById("downloadForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    var selectedPDF = document.getElementById("pdfSelect").value;
+
+    if (selectedPDF) {
+        // Trigger download
+        var link = document.createElement("a");
+        link.href = selectedPDF;
+        link.download = "";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Close modal
+        var modal = bootstrap.Modal.getInstance(document.getElementById('downloadModal'));
+        modal.hide();
+    } else {
+        alert("Please select a PDF");
+    }
+});
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
     <!--====== Jquery js ======-->
     <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
     <!--====== Bootstrap js ======-->

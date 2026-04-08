@@ -182,8 +182,9 @@ Flow Meter
                                 <div class="search-btn" data-bs-toggle="modal" data-bs-target="#search-modal"><i class="far fa-search"></i></div>
                             </div> -->
                         <div class="nav-button d-none d-md-block">
-                            <a href="" class="theme-btn gradient-btn">Contact Us</a>
-                        </div>
+  <a href="contact.html" target="_blank" class="theme-btn gradient-btn">Inquire Now
+  </a>
+</div>
                         <div class="navbar-toggler">
                             <span></span>
                             <span></span>
@@ -616,13 +617,13 @@ tabs.forEach((tab, index) => {
                           and assembly solutions provider in India, specializing
                           in advanced joining technologies
                         </p>
-                        <div class="social-box">
+                        <!-- <div class="social-box">
                                                 <a href="https://wa.me/919175914188" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                                                <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
                                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                                <a href="#"><i class="fab fa-youtube"></i></a> -->
-                                            </div>
+                                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                            </div> -->
                       </div>
                     </div>
                   </div>
@@ -755,6 +756,28 @@ tabs.forEach((tab, index) => {
         </footer><!--======  End Footer  ======-->
         </div>
     </div>
+
+
+    <!-- WhatsApp Sticky Button -->
+<a href="https://wa.me/919175914188" target="_blank" class="whatsapp-float">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+
+<script>
+    const whatsappBtn = document.querySelector('.whatsapp-float');
+
+    setInterval(() => {
+        whatsappBtn.classList.add('pulse');
+        setTimeout(() => {
+            whatsappBtn.classList.remove('pulse');
+        }, 1000);
+    }, 3000);
+</script>
+
+
+
+
     <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
     <!--====== Bootstrap js ======-->
     <script src="assets/js/plugins/popper.min.js"></script>
