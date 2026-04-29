@@ -310,7 +310,7 @@ label {
   font-size: 20px;
   line-height: 1;
   font-family: var(--heading-font);
-  color: white;
+  color: #2d2d2d;
   font-weight: 700;
   text-transform: uppercase;
   display: -webkit-inline-box;
@@ -2035,7 +2035,7 @@ label {
 }
 
 .orbia-hero_one .hero-wrapper .hero-content h1 {
-  color: var(--white-color);
+  color: #2d2d2d;
   margin-bottom: 35px;
   font-size: 84px;
 }
@@ -2058,7 +2058,7 @@ label {
 
 .orbia-hero_one .hero-wrapper .hero-content>p {
   font-size: 18px;
-  color: var(--white-color);
+  color: #2d2d2d;
   max-width: 700px;
   margin-bottom: 40px;
 }
@@ -9316,11 +9316,11 @@ label {
 .auto-left h1 {
   font-size: 40px;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #2d2d2d;
 }
 
 .auto-left p {
-  color: #dedede;
+  color: #2d2d2d;
   line-height: 1.6;
   margin-bottom: 25px;
   text-align: justify;
@@ -9361,14 +9361,14 @@ label {
 }
 
 .tab-auto {
-      font-size: 20px;
-    font-weight: 600;
-  padding: 12px 15px;
-  border-radius: 20px;
-  cursor: pointer;
-  color: #aaa;
-  transition: 0.3s;
-  border-left: 3px solid transparent;
+font-size: 22px;
+    font-weight: 900;
+    padding: 12px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #2c2c2c;
+    transition: 0.3s;
+    border-left: 3px solid transparent;
 }
 
 .tab-auto:hover {
@@ -9379,8 +9379,8 @@ label {
 font-size: 24px;
     color: #ffffff;
     font-weight: 900;
-    border-left: 4px solid #858585;
-    background: rgb(149 149 149 / 8%);
+    border-left: 4px solid #ff6000;
+    background: rgb(254 151 35);
 }
 
 /* RESPONSIVE */
@@ -9443,6 +9443,7 @@ color: #666;
     padding: 80px 20px;
     background: #f5f7f8;
     font-family: 'Poppins', sans-serif;
+    padding-top: 150px;
 }
 
 .contact-container {
@@ -9480,13 +9481,13 @@ color: #666;
 }
 
 .contact-form-new button {
-    background: #0b4f56;
+        background: #ff7f13;
+    font-weight: 700;
     color: #fff;
     border: none;
     padding: 12px 40px;
     border-radius: 30px;
-    font-size: 16px;
-    cursor: pointer;
+    font-size: 18px;
 }
 
 /* MAP */
@@ -9517,9 +9518,9 @@ color: #666;
 }
 
 .call-box {
-    background: #ffffff;
-    border: 2px solid #006f72;
-    color: #006f72;
+background: #ffffff;
+    border: 2px solid #ff7f13;
+    color: #ff7f13;
     text-align: center;
 }
 
@@ -9529,15 +9530,15 @@ color: #666;
 
 .email-box {
     background: #ffffff;
-    color: #006f72;
-    border: 2px solid #006f72;
+    border: 2px solid #ff7f13;
+    color: #ff7f13;
     text-align: center;
 }
 
 .address-box {
     background: #ffffff;
-    color: #006f72;
-    border: 2px solid #006f72;
+    border: 2px solid #ff7f13;
+    color: #ff7f13;
     text-align: center;
 }
 
@@ -9560,7 +9561,7 @@ color: #666;
 .icon {
         width: 70px;
     height: 70px;
-    border: 1px solid #ffa681;
+    border: 1px solid #ff7f13;
     /* background: rgba(0,0,0,0.05); */
     display: flex;
     align-items: center;
@@ -9571,7 +9572,7 @@ color: #666;
 
 .card-box .fa-location-dot:before, .fa-map-marker-alt:before {
     content: "\f3c5";
-    color: #006f72;
+    color: #ff7f13;
 }
 
 
@@ -9620,7 +9621,7 @@ color: #666;
 }
 
 .contact-subtitle {
-    color: #0b4f56;
+    color: #fa8b20;
     font-weight: 600;
     display: block;
     margin-bottom: 10px;
@@ -9863,4 +9864,13 @@ color: #666;
     /* min-height: 100vh; */
     padding: 0px 0 115px;
         background: #f5f5f5;
+}
+
+
+
+
+.contact-us {
+  text-align: center;
+    margin-bottom: 30px;
+    color: #1f1f1f;
 }
