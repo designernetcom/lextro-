@@ -251,7 +251,7 @@ Flow Meter
 
           <style>
             .product-hero {
-              min-height: 100vh;
+              /* min-height: 100vh; */
               background: url("assets/images/products/wcs-controller.png")
                 no-repeat center center;
               background-size: cover;
@@ -260,87 +260,227 @@ Flow Meter
               padding: 180px 0;
             }
 
-            /* LEFT CONTENT */
-            .hero-content .sub-title {
-              font-size: 14px;
-              margin-bottom: 20px;
-              opacity: 0.9;
-            }
+                                           /* Tablet Responsive */
+@media (max-width: 991px) {
+  .product-hero {
+    min-height: auto;
+    padding: 140px 0 100px;
+    background-position: center;
+    /* margin-top: 120px; */
+    height: 80vh;
+  }
 
-            .main-title {
-              font-size: 56px;
-              font-weight: 600;
-              line-height: 1.2;
-              margin-bottom: 25px;
-            }
+      .main-title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
 
-            /* TAGS */
-            .tags {
-              display: flex;
-              flex-wrap: wrap;
-              gap: 10px;
-              margin-bottom: 25px;
-            }
+    .tags span {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 13px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+}
 
-            .tags span {
-              background: rgba(0, 0, 0, 0.3);
-              padding: 8px 15px;
-              border-radius: 8px;
-              font-size: 15px;
-              font-weight: 700;
-            }
+.tags {
+    gap: 5px;
+    margin-bottom: 8px;
+}
 
-            .tags .light {
-              background: #e5e7eb;
-              color: #333;
-            }
+.desc {
+           font-size: 18px;
+        margin-bottom: 10px !important;
+        line-height: 24px;
+}
 
-            /* DESCRIPTION */
-            .desc {
-              max-width: 500px;
-              margin-bottom: 30px;
-              opacity: 0.9;
-              color: #2d2d2d;
-            }
+.hero-content .sub-title {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
 
-            /* BUTTON */
-            .btn-contact {
-              background: #fff;
-              color: #333;
-              padding: 12px 25px;
-              border-radius: 30px;
-              text-decoration: none;
-              display: inline-block;
-              transition: 0.3s;
-            }
+.btn-contact {
+    font-size: 16px;
+    background: #fff;
+    color: #333;
+    padding: 6px 9px;
+}
+}
 
-            .btn-contact:hover {
-              background: #000;
-              color: #fff;
-            }
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .product-hero {
+    min-height: auto;
+    background-position: center center;
+    padding: 58px 0 60px;
+        margin-top: 100px;
+        height: 50vh;
+  }
 
-            /* IMAGE */
-            .hero-img img {
-              max-width: 100%;
-              transform: scale(1.1);
-            }
+      .main-title {
+        font-size: 22px !important;
+        margin-bottom: 10px !important;
+    }
 
-            /* RESPONSIVE */
-            @media (max-width: 991px) {
-              .main-title {
-                font-size: 36px;
-              }
+    .tags span {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
 
-              .hero-img {
-                text-align: center;
-                margin-top: 40px;
-              }
+.tags {
+    gap: 5px;
+    margin-bottom: 8px;
+}
 
-              .product-hero {
-                text-align: center;
-              }
-            }
-          </style>
+.desc {
+    font-size: 15px;
+    margin-bottom: 8px;
+    line-height: 17px;
+}
+
+.hero-content .sub-title {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.btn-contact {
+    font-size: 15px;
+    background: #fff;
+    color: #333;
+    padding: 5px 8px;
+}
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .product-hero {
+        padding: 53px 0 60px;
+        margin-top: 90px;
+        height: 30vh;
+    }
+
+      .main-title {
+        font-size: 20px !important;
+        margin-bottom: 5px !important;
+    }
+    
+    .tags span {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0px 3px !important;
+    border-radius: 8px;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+}
+
+.tags {
+    gap: 5px !important;
+    margin-bottom: 8px !important;
+}
+
+.desc {
+    font-size: 12px;
+    margin-bottom: 6px !important;
+    line-height: 16px;
+}
+
+.hero-content .sub-title {
+    font-size: 10px !important;
+    margin-bottom: 0px !important;
+}
+
+.btn-contact {
+    font-size: 14px !important;
+    background: #fff;
+    color: #333;
+    padding: 4px 7px !important;
+}
+}
+
+
+                    /* LEFT CONTENT */
+                    .hero-content .sub-title {
+                        font-size: 14px;
+                        margin-bottom: 20px;
+                        opacity: 0.9;
+                    }
+
+                    .main-title {
+                        font-size: 56px;
+                        font-weight: 600;
+                        line-height: 1.2;
+                        margin-bottom: 25px;
+                    }
+
+                    /* TAGS */
+                    .tags {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        margin-bottom: 25px;
+                    }
+
+                    .tags span {
+                        background: rgba(0, 0, 0, 0.3);
+                        padding: 8px 15px;
+                        border-radius: 8px;
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
+
+                    .tags .light {
+                        background: #e5e7eb;
+                        color: #333;
+                    }
+
+                    /* DESCRIPTION */
+                    .desc {
+                        max-width: 500px;
+                        margin-bottom: 30px;
+                        opacity: 0.9;
+                        color: #2d2d2d;
+                    }
+
+                    /* BUTTON */
+                    .btn-contact {
+                        background: #fff;
+                        color: #333;
+                        padding: 12px 25px;
+                        border-radius: 30px;
+                        text-decoration: none;
+                        display: inline-block;
+                        transition: 0.3s;
+                    }
+
+                    .btn-contact:hover {
+                        background: #000;
+                        color: #fff;
+                    }
+
+                    /* IMAGE */
+                    .hero-img img {
+                        max-width: 100%;
+                        transform: scale(1.1);
+                    }
+
+                    /* RESPONSIVE */
+                    @media (max-width: 991px) {
+                        .main-title {
+                            font-size: 40px;
+                        }
+
+                        .hero-img {
+                            /* text-align: center; */
+                            margin-top: 40px;
+                        }
+
+                        /* .product-hero {
+                            text-align: center;
+                        } */
+                    }
+                </style>
 
           <section class="features-section">
             <div class="container">
