@@ -4,7 +4,7 @@
 
 Template Name: Orbia - AI Agency & Technology HTML Template
 URI: https://nayonacademy.com/
-Description: Orbia – AI Agency & Technology HTML Template is a modern, clean, and fully responsive template designed for AI startups, tech companies, digital agencies, and innovative businesses. With a sleek user interface and cutting-edge design, Orbia helps you showcase your services, products, and projects in a professional way.
+Description: Orbia – AI Agency & Technology HTML Template is a modern, clean and fully responsive template designed for AI startups, tech companies, digital agencies and innovative businesses. With a sleek user interface and cutting-edge design, Orbia helps you showcase your services, products and projects in a professional way.
 Author: Themeservices
 Author URI: https://themeforest.net/user/themeservices
 Version: 1.0 
@@ -1811,18 +1811,18 @@ label {
 }
 
 /* Sticky Header */
-.sticky {
+.header-area {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   width: 100%;
-  z-index: 1000;
-  margin: 0 auto;
+  z-index: 9999;
+  background: #ffffff;
 }
 
 .header-one .header-navigation.sticky {
-  background-color: #e7e7e7;
+  /* position: fixed; */
+  background-color: #fffffff7;
 }
 
 .header-two .header-navigation.sticky {
@@ -1896,6 +1896,7 @@ label {
 @media (max-width: 1650px) {
   .orbia-hero_one {
     padding: 15px;
+    padding-top: 105px;
   }
 }
 
@@ -9552,6 +9553,7 @@ background: #ffffff;
 
 .card-box h3 {
     margin: 5px 0;
+    font-size: 21px;
 }
 
 .card-box p {
@@ -9854,8 +9856,13 @@ background: #ffffff;
     padding: 10px;
     border-radius: 5px;
     font-size: 14px;
-    color: #f4801a;
-    /* border: 1px solid #f4801a; */
+    color: rgb(244, 128, 26);
+    /* border: 2px solid #fd9f2a; */
+}
+
+.nav-button img {
+  border: 2px solid #fd9f2a;
+  border-radius: 5px;
 }
 
 

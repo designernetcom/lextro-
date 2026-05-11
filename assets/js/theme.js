@@ -2,7 +2,7 @@
     
     Template Name: Orbia - AI Agency & Technology HTML Template
     URI: https://nayonacademy.com/
-    Description: Orbia â€“ AI Agency & Technology HTML Template is a modern, clean, and fully responsive template designed for AI startups, tech companies, digital agencies, and innovative businesses. With a sleek user interface and cutting-edge design, Orbia helps you showcase your services, products, and projects in a professional way.
+    Description: Orbia â€“ AI Agency & Technology HTML Template is a modern, clean and fully responsive template designed for AI startups, tech companies, digital agencies and innovative businesses. With a sleek user interface and cutting-edge design, Orbia helps you showcase your services, products and projects in a professional way.
     Author: Themeservices
     Author URI: https://themeforest.net/user/themeservices
     Version: 1.0 
