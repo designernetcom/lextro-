@@ -9790,12 +9790,12 @@ background: #ffffff;
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
-    background: #11ada5;
+  background: linear-gradient(180deg, #ff9e2f, #ff6500);
   color: #ffffff;
 }
 
 .dl-submit-btn:hover {
-  background: #8e8e8e;
+  background: linear-gradient(180deg, #555555, #272727);
   color: #ffffff;
 }
 
@@ -9931,3 +9931,7 @@ background: #ffffff;
 }
 
 
+
+.application-section {
+  padding-top: 100px;
+}
