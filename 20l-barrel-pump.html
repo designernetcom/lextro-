@@ -257,51 +257,118 @@
         <div id="smooth-content">
             <main>
                 <!--======  Start Page Hero Section  ======-->
-                <section class="product-hero d-flex align-items-center">
+                <!-- <section class="product-hero d-flex align-items-center">
                     <div class="container">
                         <div class="row align-items-center">
 
-                            <!-- LEFT CONTENT -->
-                            <!-- <div class="col-lg-6">
-                                <div class="hero-content">
-
-                                    <p class="sub-title">「 X - Feed 」</p>
-
-                                    <h1 class="main-title">
-                                        20L Feed platen pump
-                                    </h1>
-
-                                    
-
-                                    <p class="desc">Centron barrel supply system and pumps deliver medium to high viscosityfluid directly from original packaging barrel to transfer station or meteringsystem to avoid the risks associated with secondary packaging or transferring</p>
-
-                                    <a href="contact.html" class="btn-contact">
-                                        <i class="fa fa-user"></i> Contact
-                                    </a>
-
-                                </div>
-                            </div> -->
-
-                            <!-- RIGHT IMAGE -->
-                            <!-- <div class="col-lg-6 text-end">
-                <div class="hero-img">
-                    <img src="https://www.leetx.com/en/web/upload/2024/07/25/17218777096018jjxjt.png" alt="product">
-                </div>
-            </div> -->
-
                         </div>
                     </div>
-                </section>
+                </section> -->
+
+
+                <div class="single-banner">
+    <img 
+        src="assets/images/products/20l-feed2.png"
+        class="img-fluid"
+        alt="banner"
+    >
+</div>
+
+
+<style>
+/* ===== SINGLE BANNER ===== */
+
+.single-banner{
+    width: 100%;
+    margin-top: 90px;
+    overflow: hidden;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    background: #fff;
+}
+
+/* ===== IMAGE ===== */
+
+.single-banner img{
+    width: 100%;
+    /* height: auto; */
+    display: block;
+    object-fit: cover;
+}
+
+/* ===== LARGE SCREEN ===== */
+
+@media (min-width: 1400px){
+
+  /* .single-banner{
+    margin-top: 120px;
+  } */
+
+    .single-banner img{
+       width: 100%;
+        object-fit: contain;
+    }
+}
+
+/* ===== LAPTOP ===== */
+
+@media (max-width: 1200px){
+
+    /* .single-banner{
+        border-radius: 30px 30px 0 0;
+    } */
+
+    .single-banner img{
+        width: 100%;
+        object-fit: contain;
+        background: #fff;
+    }
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width: 992px){
+
+    /* .single-banner{
+        margin-top: 80px;
+        border-radius: 25px 25px 0 0;
+    } */
+
+    .single-banner img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 576px){
+
+    /* .single-banner{
+        margin-top: 70px;
+        border-radius: 18px 18px 0 0;
+    } */
+
+    .single-banner img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+</style>
+
+
+
 
                 <style>
-                    .product-hero {
+                    /* .product-hero {
                         min-height: 100vh;
                         background: url('assets/images/products/20l-feed.png') no-repeat center center;
                         background-size: cover;
-                        /* 🔥 this is the main fix */
                         color: #fff;
                         padding: 180px 0;
-                    }
+                    } */
 
                     /* LEFT CONTENT */
                     .hero-content .sub-title {
