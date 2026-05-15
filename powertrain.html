@@ -268,9 +268,7 @@
 </div> -->
 
 <div class="nav-button d-none d-md-block">
-  <a href="" target="_blank">
     <img src="assets/images/leetx-authorise.png" alt="Enquire Now" style="width: 220px; height: auto;"/>
-  </a>
 </div>
                         <div class="navbar-toggler">
                             <span></span>
@@ -1037,6 +1035,8 @@ top: 296px;
 </style>
 
 
+
+
 <style>
 
   .app-config-section{
@@ -1045,7 +1045,6 @@ top: 296px;
     align-items:center;
     overflow:hidden;
     position:relative;
-    /* padding:60px 0; */
   }
 
   .app-config-left{
@@ -1126,6 +1125,36 @@ top: 296px;
     background:#000;
   }
 
+  /* NAVIGATION BUTTONS */
+
+  .app-swiper-btn{
+    width:50px;
+    height:50px;
+    background:#fff;
+    border-radius:50%;
+    box-shadow:0 4px 15px rgba(0,0,0,0.12);
+    color:#000;
+    transition:0.3s ease;
+  }
+
+  .app-swiper-btn::after{
+    font-size:18px;
+    font-weight:700;
+  }
+
+  .app-swiper-btn:hover{
+    background:#000;
+    color:#fff;
+  }
+
+  .swiper-button-prev{
+    left:20px;
+  }
+
+  .swiper-button-next{
+    right:20px;
+  }
+
   @media(max-width:991px){
 
     .app-config-left{
@@ -1149,6 +1178,12 @@ top: 296px;
     .app-config-swiper .swiper-slide-active{
       transform:scale(1);
     }
+
+    .app-swiper-btn{
+      width:42px;
+      height:42px;
+    }
+
   }
 
 </style>
@@ -1202,12 +1237,11 @@ top: 296px;
                 <img src="assets/images/products/power33.png" alt="">
               </div>
 
-              <!-- Slide 4 -->
-              <!-- <div class="swiper-slide" data-title="Narrow gap potting at the end of the PACK">
-                <img src="assets/images/products/battery11.png" alt="">
-              </div> -->
-
             </div>
+
+            <!-- Navigation Arrows -->
+            <div class="swiper-button-prev app-swiper-btn"></div>
+            <div class="swiper-button-next app-swiper-btn"></div>
 
             <!-- Pagination -->
             <div class="swiper-pagination"></div>
@@ -1243,6 +1277,13 @@ top: 296px;
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+
+    /* NAVIGATION */
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
 
     breakpoints: {
@@ -1295,6 +1336,9 @@ top: 296px;
   }
 
 </script>
+
+
+
 
                 </main>
                 
